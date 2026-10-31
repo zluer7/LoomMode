@@ -1,0 +1,60 @@
+{
+  "project": "YOUR_TEST_PROJECT",
+  "stage_id": "AT1-A1",
+  "task_id": "AT1-A1-A1",
+  "caller_id": "YOUR_APPROVED_CALLER",
+  "workspace": "C:/approved/Test Workspace",
+  "records_root": "C:/approved/Test Records",
+  "runtime_root": "C:/approved/Test Runtime",
+  "records_tuple": [
+    "AT1",
+    "A",
+    "A1"
+  ],
+  "owner_source": {
+    "path": "C:/approved/Original Inputs/actual-owner.txt",
+    "sha256": "REPLACE_RAW_SHA256"
+  },
+  "stage_authority": {
+    "path": "C:/approved/Original Inputs/actual-stage.md",
+    "sha256": "REPLACE_RAW_SHA256"
+  },
+  "resource_authorization": {
+    "path": "C:/approved/Original Inputs/actual-resource.json",
+    "sha256": "REPLACE_RAW_SHA256"
+  },
+  "resource_supplement": {
+    "path": "C:/approved/Original Inputs/actual-supplement.md",
+    "sha256": "REPLACE_RAW_SHA256"
+  },
+  "codex": {
+    "binary": {
+      "path": "C:/approved/Actual Codex/codex.exe",
+      "sha256": "REPLACE_RAW_SHA256"
+    },
+    "supported_versions": [
+      "REPLACE_ACTUALLY_VERIFIED_VERSION"
+    ]
+  },
+  "policy": {
+    "readable": [
+      "answer.py",
+      "test_answer.py"
+    ],
+    "writable": [
+      "answer.py"
+    ],
+    "tests": [
+      {
+        "test_id": "answer",
+        "argv": [
+          "C:/approved/Python/python.exe",
+          "-B",
+          "test_answer.py"
+        ],
+        "cwd": ".",
+        "timeout_seconds": 60
+      }
+    ]
+  }
+}

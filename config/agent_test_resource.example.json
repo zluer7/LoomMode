@@ -1,0 +1,20 @@
+{
+  "origin": "OWNER_APPROVED_RESOURCE_AUTHORIZATION",
+  "project": "YOUR_TEST_PROJECT",
+  "stage_id": "AT1-A1",
+  "task_id": "AT1-A1-A1",
+  "workspace": "C:/approved/Test Workspace",
+  "caller_id": "YOUR_APPROVED_CALLER",
+  "owner_source_ref": "owner-original",
+  "supplement_ref": "resource-supplement",
+  "preparation_ref": "prepared-inputs",
+  "limits": {
+    "max_run_turns": 12,
+    "per_turn_seconds": 240,
+    "total_seconds": 7200,
+    "max_additional_charge": 0
+  },
+  "authorized_at_utc": "REPLACE_ACTUAL_AUTHORIZED_AWARE_UTC",
+  "valid_until_utc": "REPLACE_ACTUAL_FIXED_EXPIRY_AWARE_UTC",
+  "route": "existing_chatgpt_subscription_codex_app_server"
+}

@@ -1,0 +1,481 @@
+{
+  "format": "LOOMMODE_AGENT_TEST_CANDIDATE_V1",
+  "files": [
+    {
+      "source": "src/loommode/__init__.py",
+      "target": "src/loommode/__init__.py"
+    },
+    {
+      "source": "src/loommode/codex/__init__.py",
+      "target": "src/loommode/codex/__init__.py"
+    },
+    {
+      "source": "src/loommode/codex/adapter.py",
+      "target": "src/loommode/codex/adapter.py"
+    },
+    {
+      "source": "src/loommode/codex/app_server.py",
+      "target": "src/loommode/codex/app_server.py"
+    },
+    {
+      "source": "src/loommode/codex/context.py",
+      "target": "src/loommode/codex/context.py"
+    },
+    {
+      "source": "src/loommode/codex/errors.py",
+      "target": "src/loommode/codex/errors.py"
+    },
+    {
+      "source": "src/loommode/codex/protocol.py",
+      "target": "src/loommode/codex/protocol.py"
+    },
+    {
+      "source": "src/loommode/codex/schema.py",
+      "target": "src/loommode/codex/schema.py"
+    },
+    {
+      "source": "src/loommode/distribution.py",
+      "target": "src/loommode/distribution.py"
+    },
+    {
+      "source": "src/loommode/host/__init__.py",
+      "target": "src/loommode/host/__init__.py"
+    },
+    {
+      "source": "src/loommode/host/activity.py",
+      "target": "src/loommode/host/activity.py"
+    },
+    {
+      "source": "src/loommode/host/bootstrap.py",
+      "target": "src/loommode/host/bootstrap.py"
+    },
+    {
+      "source": "src/loommode/host/caller_relay.py",
+      "target": "src/loommode/host/caller_relay.py"
+    },
+    {
+      "source": "src/loommode/host/canonical.py",
+      "target": "src/loommode/host/canonical.py"
+    },
+    {
+      "source": "src/loommode/host/cli.py",
+      "target": "src/loommode/host/cli.py"
+    },
+    {
+      "source": "src/loommode/host/decision.py",
+      "target": "src/loommode/host/decision.py"
+    },
+    {
+      "source": "src/loommode/host/driver.py",
+      "target": "src/loommode/host/driver.py"
+    },
+    {
+      "source": "src/loommode/host/forward.py",
+      "target": "src/loommode/host/forward.py"
+    },
+    {
+      "source": "src/loommode/host/implementation.py",
+      "target": "src/loommode/host/implementation.py"
+    },
+    {
+      "source": "src/loommode/host/interactive.py",
+      "target": "src/loommode/host/interactive.py"
+    },
+    {
+      "source": "src/loommode/host/managed_native.py",
+      "target": "src/loommode/host/managed_native.py"
+    },
+    {
+      "source": "src/loommode/host/materials.py",
+      "target": "src/loommode/host/materials.py"
+    },
+    {
+      "source": "src/loommode/host/model_routing.py",
+      "target": "src/loommode/host/model_routing.py"
+    },
+    {
+      "source": "src/loommode/host/native_admission.py",
+      "target": "src/loommode/host/native_admission.py"
+    },
+    {
+      "source": "src/loommode/host/ownership.py",
+      "target": "src/loommode/host/ownership.py"
+    },
+    {
+      "source": "src/loommode/host/private_instance.py",
+      "target": "src/loommode/host/private_instance.py"
+    },
+    {
+      "source": "src/loommode/host/requests.py",
+      "target": "src/loommode/host/requests.py"
+    },
+    {
+      "source": "src/loommode/host/state_view.py",
+      "target": "src/loommode/host/state_view.py"
+    },
+    {
+      "source": "src/loommode/host/successor.py",
+      "target": "src/loommode/host/successor.py"
+    },
+    {
+      "source": "src/loommode/host/successor_factory.py",
+      "target": "src/loommode/host/successor_factory.py"
+    },
+    {
+      "source": "src/loommode/host/supervisor.py",
+      "target": "src/loommode/host/supervisor.py"
+    },
+    {
+      "source": "src/loommode/host/terminal.py",
+      "target": "src/loommode/host/terminal.py"
+    },
+    {
+      "source": "src/loommode/host/windows.py",
+      "target": "src/loommode/host/windows.py"
+    },
+    {
+      "source": "src/loommode/roles/__init__.py",
+      "target": "src/loommode/roles/__init__.py"
+    },
+    {
+      "source": "src/loommode/roles/api_review.py",
+      "target": "src/loommode/roles/api_review.py"
+    },
+    {
+      "source": "src/loommode/roles/contracts.py",
+      "target": "src/loommode/roles/contracts.py"
+    },
+    {
+      "source": "src/loommode/roles/explanation.py",
+      "target": "src/loommode/roles/explanation.py"
+    },
+    {
+      "source": "src/loommode/roles/model_routing.py",
+      "target": "src/loommode/roles/model_routing.py"
+    },
+    {
+      "source": "src/loommode/roles/prompts.py",
+      "target": "src/loommode/roles/prompts.py"
+    },
+    {
+      "source": "src/loommode/roles/runtime.py",
+      "target": "src/loommode/roles/runtime.py"
+    },
+    {
+      "source": "src/loommode/tools/__init__.py",
+      "target": "src/loommode/tools/__init__.py"
+    },
+    {
+      "source": "src/loommode/tools/filesystem.py",
+      "target": "src/loommode/tools/filesystem.py"
+    },
+    {
+      "source": "src/loommode/tools/git.py",
+      "target": "src/loommode/tools/git.py"
+    },
+    {
+      "source": "src/loommode/tools/owned_job.py",
+      "target": "src/loommode/tools/owned_job.py"
+    },
+    {
+      "source": "src/loommode/tools/process_stop.py",
+      "target": "src/loommode/tools/process_stop.py"
+    },
+    {
+      "source": "src/loommode/tools/runtime.py",
+      "target": "src/loommode/tools/runtime.py"
+    },
+    {
+      "source": "src/loommode/tools/sandbox_test.py",
+      "target": "src/loommode/tools/sandbox_test.py"
+    },
+    {
+      "source": "src/loommode/tools/task_proof.py",
+      "target": "src/loommode/tools/task_proof.py"
+    },
+    {
+      "source": "src/loommode/tools/test_runner.py",
+      "target": "src/loommode/tools/test_runner.py"
+    },
+    {
+      "source": "src/loommode/version.py",
+      "target": "src/loommode/version.py"
+    },
+    {
+      "source": "src/loommode/workflow/__init__.py",
+      "target": "src/loommode/workflow/__init__.py"
+    },
+    {
+      "source": "src/loommode/workflow/allowance_history.py",
+      "target": "src/loommode/workflow/allowance_history.py"
+    },
+    {
+      "source": "src/loommode/workflow/artifacts.py",
+      "target": "src/loommode/workflow/artifacts.py"
+    },
+    {
+      "source": "src/loommode/workflow/checkpoints.py",
+      "target": "src/loommode/workflow/checkpoints.py"
+    },
+    {
+      "source": "src/loommode/workflow/engine.py",
+      "target": "src/loommode/workflow/engine.py"
+    },
+    {
+      "source": "src/loommode/workflow/errors.py",
+      "target": "src/loommode/workflow/errors.py"
+    },
+    {
+      "source": "src/loommode/workflow/executor.py",
+      "target": "src/loommode/workflow/executor.py"
+    },
+    {
+      "source": "src/loommode/workflow/failure_evidence.py",
+      "target": "src/loommode/workflow/failure_evidence.py"
+    },
+    {
+      "source": "src/loommode/workflow/governance.py",
+      "target": "src/loommode/workflow/governance.py"
+    },
+    {
+      "source": "src/loommode/workflow/implementation.py",
+      "target": "src/loommode/workflow/implementation.py"
+    },
+    {
+      "source": "src/loommode/workflow/managed_cli.py",
+      "target": "src/loommode/workflow/managed_cli.py"
+    },
+    {
+      "source": "src/loommode/workflow/owner_requests.py",
+      "target": "src/loommode/workflow/owner_requests.py"
+    },
+    {
+      "source": "src/loommode/workflow/state.py",
+      "target": "src/loommode/workflow/state.py"
+    },
+    {
+      "source": "src/loommode/workflow/transitions.py",
+      "target": "src/loommode/workflow/transitions.py"
+    },
+    {
+      "source": "src/loommode_binding.py",
+      "target": "src/loommode_binding.py"
+    },
+    {
+      "source": "pyproject.toml",
+      "target": "pyproject.toml"
+    },
+    {
+      "source": "tools/loommode.py",
+      "target": "tools/loommode.py"
+    },
+    {
+      "source": "tools/loommode_binding.py",
+      "target": "tools/loommode_binding.py"
+    },
+    {
+      "source": "tools/loommode_codex_factory.py",
+      "target": "tools/loommode_codex_factory.py"
+    },
+    {
+      "source": "tools/loommode_bootstrap_preflight.py",
+      "target": "tools/loommode_bootstrap_preflight.py"
+    },
+    {
+      "source": "tools/loommode_work_package.py",
+      "target": "tools/loommode_work_package.py"
+    },
+    {
+      "source": "tools/agent_test_setup.py",
+      "target": "tools/agent_test_setup.py"
+    },
+    {
+      "source": "tools/agent_test_caller.py",
+      "target": "tools/agent_test_caller.py"
+    },
+    {
+      "source": "tools/agent_test_verify.py",
+      "target": "tools/agent_test_verify.py"
+    },
+    {
+      "source": "tools/agent_test_package.py",
+      "target": "tools/agent_test_package.py"
+    },
+    {
+      "source": "tools/agent_test_integrity.py",
+      "target": "tools/agent_test_integrity.py"
+    },
+    {
+      "source": "config/canonical_binding.example.json",
+      "target": "config/canonical_binding.example.json"
+    },
+    {
+      "source": "config/codex_bootstrap.example.json",
+      "target": "config/codex_bootstrap.example.json"
+    },
+    {
+      "source": "config/agent_test_request.example.json",
+      "target": "config/agent_test_request.example.json"
+    },
+    {
+      "source": "config/agent_test_resource.example.json",
+      "target": "config/agent_test_resource.example.json"
+    },
+    {
+      "source": "config/agent_test_package.json",
+      "target": "config/agent_test_package.json"
+    },
+    {
+      "source": "config/roles/Promoter.md",
+      "target": "config/roles/Promoter.md"
+    },
+    {
+      "source": "config/roles/Constraint.md",
+      "target": "config/roles/Constraint.md"
+    },
+    {
+      "source": "config/roles/Discussant.md",
+      "target": "config/roles/Discussant.md"
+    },
+    {
+      "source": "config/roles/Decision.md",
+      "target": "config/roles/Decision.md"
+    },
+    {
+      "source": "tests/__init__.py",
+      "target": "tests/__init__.py"
+    },
+    {
+      "source": "tests/fake_workflow_adapter.py",
+      "target": "tests/fake_workflow_adapter.py"
+    },
+    {
+      "source": "tests/support.py",
+      "target": "tests/support.py"
+    },
+    {
+      "source": "tests/test_bootstrap_namespace.py",
+      "target": "tests/test_bootstrap_namespace.py"
+    },
+    {
+      "source": "tests/test_caller_relay.py",
+      "target": "tests/test_caller_relay.py"
+    },
+    {
+      "source": "tests/test_caller_verification.py",
+      "target": "tests/test_caller_verification.py"
+    },
+    {
+      "source": "tests/test_canonical_relay_factory.py",
+      "target": "tests/test_canonical_relay_factory.py"
+    },
+    {
+      "source": "tests/test_first_native_correction.py",
+      "target": "tests/test_first_native_correction.py"
+    },
+    {
+      "source": "tests/test_handoff_correction.py",
+      "target": "tests/test_handoff_correction.py"
+    },
+    {
+      "source": "tests/test_host_execution_handoff.py",
+      "target": "tests/test_host_execution_handoff.py"
+    },
+    {
+      "source": "tests/test_native_executor_admission.py",
+      "target": "tests/test_native_executor_admission.py"
+    },
+    {
+      "source": "tests/test_native_permissions.py",
+      "target": "tests/test_native_permissions.py"
+    },
+    {
+      "source": "tests/test_native_test_receipts.py",
+      "target": "tests/test_native_test_receipts.py"
+    },
+    {
+      "source": "tests/test_no_dev_change.py",
+      "target": "tests/test_no_dev_change.py"
+    },
+    {
+      "source": "tests/test_public_bootstrap.py",
+      "target": "tests/test_public_bootstrap.py"
+    },
+    {
+      "source": "tests/test_workflow_runtime.py",
+      "target": "tests/test_workflow_runtime.py"
+    },
+    {
+      "source": "tests/workflow_support.py",
+      "target": "tests/workflow_support.py"
+    },
+    {
+      "source": "tests/test_agent_test_package.py",
+      "target": "tests/test_agent_test_package.py"
+    },
+    {
+      "source": "tests/fixtures/fake_app_server.py",
+      "target": "tests/fixtures/fake_app_server.py"
+    },
+    {
+      "source": "docs/Agent_Test_README.md",
+      "target": "README.md"
+    },
+    {
+      "source": "docs/Agent_Test_Install.md",
+      "target": "AGENT_INSTALL.md"
+    },
+    {
+      "source": "docs/Agent_Test_Rights.md",
+      "target": "LICENSE_SCOPE.md"
+    },
+    {
+      "source": "docs/Agent_Test_Dependencies.md",
+      "target": "DEPENDENCIES.md"
+    },
+    {
+      "source": "docs/Agent_Test_Release_Notes.md",
+      "target": "RELEASE_NOTES.md"
+    },
+    {
+      "source": "LICENSE",
+      "target": "LICENSE"
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "target": "CONTRIBUTING.md"
+    },
+    {
+      "source": "TRADEMARK.md",
+      "target": "TRADEMARK.md"
+    },
+    {
+      "source": "tests/test_agent_test_diagnostics.py",
+      "target": "tests/test_agent_test_diagnostics.py"
+    },
+    {
+      "source": "tools/agent_test_handoff.py",
+      "target": "tools/agent_test_handoff.py"
+    },
+    {
+      "source": "docs/Retest_START_HERE_zh.md",
+      "target": "START_HERE.md"
+    },
+    {
+      "source": "docs/Retest_KNOWN_ISSUES.md",
+      "target": "KNOWN_ISSUES.md"
+    },
+    {
+      "source": "docs/Retest_TEST_REPORT_TEMPLATE.md",
+      "target": "TEST_REPORT_TEMPLATE.md"
+    },
+    {
+      "source": "docs/Retest_ISSUES_TEMPLATE.md",
+      "target": "ISSUES_TEMPLATE.md"
+    },
+    {
+      "source": "tests/test_post_acceptance_stop.py",
+      "target": "tests/test_post_acceptance_stop.py"
+    }
+  ]
+}

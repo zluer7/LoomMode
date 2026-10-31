@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "project": "YOUR_PROJECT",
+  "stage_id": "YOUR_STAGE",
+  "workspace": "C:/actual/project/workspace",
+  "stage_authorization_ref": "actual-approved-stage-authority-reference",
+  "stage_authorization_sha256": "replace-with-sha256-of-exact-authority-text",
+  "decision_role": "Decision",
+  "grants": {
+    "allow_progress": false,
+    "allow_owner_events": false,
+    "local_commit_authorized": false
+  },
+  "runtime": {
+    "kind": "development",
+    "source_root": "C:/actual/approved/LoomMode/src",
+    "approval_ref": "actual-development-authorization-reference"
+  },
+  "factory": {
+    "path": "C:/actual/trusted/create_host.py",
+    "sha256": "replace-with-sha256-of-exact-factory-file-bytes"
+  }
+}

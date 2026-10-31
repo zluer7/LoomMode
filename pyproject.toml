@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loommode"
+dynamic = ["version"]
+description = "Thin workflow engine, role runtime and bounded Codex adapter for LoomMode"
+authors = [{name = "争流儿"}]
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["loommode_binding"]
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "loommode.version.__version__"}

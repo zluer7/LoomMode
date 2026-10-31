@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "project": "YOUR_PROJECT",
+  "stage_id": "EX1-A1",
+  "workspace": "C:/approved/project/Dev",
+  "records_root": "C:/approved/project/Records",
+  "runtime_root": "C:/approved/project/Runtime",
+  "records_tuple": [
+    "EX1",
+    "A",
+    "A1"
+  ],
+  "stage_authorization_ref": "owner-stage",
+  "authorities": {
+    "owner-stage": {
+      "path": "C:/approved/project/Inputs/owner-stage.md",
+      "sha256": "REPLACE_WITH_EXACT_RAW_FILE_SHA256"
+    }
+  },
+  "roles": {
+    "Promoter": {
+      "path": "C:/approved/LoomMode/config/roles/Promoter.md",
+      "sha256": "REPLACE_WITH_EXACT_RAW_FILE_SHA256"
+    },
+    "Constraint": {
+      "path": "C:/approved/LoomMode/config/roles/Constraint.md",
+      "sha256": "REPLACE_WITH_EXACT_RAW_FILE_SHA256"
+    },
+    "Discussant": {
+      "path": "C:/approved/LoomMode/config/roles/Discussant.md",
+      "sha256": "REPLACE_WITH_EXACT_RAW_FILE_SHA256"
+    },
+    "Decision": {
+      "path": "C:/approved/LoomMode/config/roles/Decision.md",
+      "sha256": "REPLACE_WITH_EXACT_RAW_FILE_SHA256"
+    }
+  },
+  "codex": {
+    "binary": {
+      "path": "C:/approved/Codex/codex.exe",
+      "sha256": "REPLACE_WITH_EXACT_RAW_FILE_SHA256"
+    },
+    "supported_versions": [
+      "REPLACE_WITH_ACTUALLY_VERIFIED_CODEX_VERSION"
+    ],
+    "connect_on_assembly": false
+  },
+  "policy": {
+    "readable": [
+      "example.py"
+    ],
+    "writable": [
+      "example.py"
+    ],
+    "tests": [
+      {
+        "test_id": "smoke",
+        "argv": [
+          "C:/approved/Python/python.exe",
+          "-B",
+          "example.py"
+        ],
+        "cwd": ".",
+        "timeout_seconds": 60
+      }
+    ]
+  },
+  "task_policies": {
+    "EX1-A1-A1": {
+      "readable": [
+        "example.py"
+      ],
+      "writable": [
+        "example.py"
+      ],
+      "tests": [
+        {
+          "test_id": "smoke",
+          "argv": [
+            "C:/approved/Python/python.exe",
+            "-B",
+            "example.py"
+          ],
+          "cwd": ".",
+          "timeout_seconds": 60
+        }
+      ]
+    }
+  },
+  "grants": {
+    "allow_progress": false,
+    "allow_owner_events": false,
+    "local_commit_authorized": false
+  }
+}
