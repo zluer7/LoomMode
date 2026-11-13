@@ -6,7 +6,10 @@ LoomMode 是由 Owner 主导委托、多 AI 角色协作的本地软件研发工
 
 ## 开始使用
 
-从 [快速开始](docs/QUICK_START.md) 获取完整工作包，或直接从本仓库离线构建，再在独立环境验证安装。需要 Python 3.11 或更高版本和 Git。真实运行还需兼容的 Codex app-server、有效登录和实际项目授权。
+- **从 GitHub 源码安装**适合开发者与贡献者。克隆本仓库，离线构建完整工作包，再在独立环境安装验证。 [源码安装步骤](docs/QUICK_START.md#方式一从-github-源码安装)
+- **从 Release 下载工作包**适合首次体验。发布后，从 [GitHub Releases](https://github.com/zluer7/LoomMode/releases) 下载完整 ZIP 和 `SHA256SUMS.txt`，或按需下载独立 wheel。ZIP 附带运行所需的工具、配置、角色和同一 wheel。单独的 wheel 适用于安装 Python 包。可将源码目录或下载文件交给 Codex，使用 [可复制的安装提示词](docs/QUICK_START.md#交给-codex-协助安装)。
+
+在普通 Windows 用户环境使用 Python 3.11 或更高版本。源码获取及受管任务还需 Git。真实任务另需兼容的 Codex app-server、有效登录和项目授权。
 
 ## 文档
 
@@ -15,4 +18,8 @@ LoomMode 是由 Owner 主导委托、多 AI 角色协作的本地软件研发工
 - [技术架构](docs/ARCHITECTURE.md)介绍 Host、Engine、角色运行层、权限和执行证据。
 - [贡献指南](.github/CONTRIBUTING.md)介绍如何通过 GitHub Issues 和 Pull Requests 参与。
 
-开发者与版权署名为 **争流儿**。项目源码采用 [Apache License 2.0](LICENSE)，名称与标识见 [TRADEMARK](TRADEMARK.md)。
+开发者与版权署名为 **争流儿**。项目源码采用 [Apache License 2.0](LICENSE)，名称与标识见 [TRADEMARK](TRADEMARK.md)。本仓库是项目的 GitHub 入口。
+
+### 历史构建资料
+
+[构建记录](BUILD.md)、`SOURCE_MANIFEST.json`、`SOURCE_SHA256SUMS`、根目录 `CONTRIBUTING.md` 和 `docs/Agent_Test_*`、`docs/Retest_*` 保留了 2.0.0 原始构建与测试交接。部分链接按 ZIP 解压后的目录布局编写。贡献请使用上方现行指南，安装请从 [快速开始](docs/QUICK_START.md) 进入。早期交接中出现的 `HANDOFF.json`、rc.3 和候选状态描述用于追溯构建。内部过程报告与验证日志留在项目记录中。

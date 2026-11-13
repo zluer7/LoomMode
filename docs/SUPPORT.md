@@ -9,4 +9,4 @@
 
 已知限制包括历史 HTTP 回退及请求超时、原生命令正文审计不完整，以及实际模型费用未独立计量。本地 Caller relay 记录可核对的本地转达材料。对未知调用终态，应保留现有状态、证据和文件改动。
 
-进一步阅读 [快速开始](QUICK_START.md)、[已知问题](Retest_KNOWN_ISSUES.md) 和 [2.0.0 候选验证记录](Agent_Test_Release_Notes.md)。欢迎在 [GitHub Issues](https://github.com/zluer7/LoomMode/issues) 提交经过脱敏的可复现问题。
+安装及配置见 [快速开始](QUICK_START.md)，版本发布信息见 [GitHub Releases](https://github.com/zluer7/LoomMode/releases)。构建时的 [问题记录](Retest_KNOWN_ISSUES.md) 和 [2.0.0 候选验证记录](Agent_Test_Release_Notes.md) 保留了当时的观察、验证与交接状态。欢迎在 [GitHub Issues](https://github.com/zluer7/LoomMode/issues) 提交经过脱敏的可复现问题。
