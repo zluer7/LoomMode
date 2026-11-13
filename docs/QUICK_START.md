@@ -7,7 +7,7 @@
 在你有权使用的普通本地目录克隆仓库，从仓库根目录运行。离线构建需要预先具备 pip、setuptools（至少 68）和 wheel。复现实测结果使用 Python 3.13.5、pip 25.1、setuptools 72.1.0、wheel 0.45.1。若 `$workRoot` 已存在，先改用新的目录名。
 
 ```powershell
-git clone https://github.com/zluer7/LoomMode.git
+git clone -c core.autocrlf=false https://github.com/zluer7/LoomMode.git
 Set-Location LoomMode
 python --version
 git --version
@@ -23,7 +23,7 @@ python -B tools/agent_test_package.py --source . `
   --source-date-epoch 1793318400
 ```
 
-构建器按选定源码清单生成工作包及同名 `.sha256`。仓库的 `SOURCE_MANIFEST.json` 与 `SOURCE_SHA256SUMS` 保留原始选定源码记录，详细工具链见 [历史构建记录](../BUILD.md)。构建完成后，从 [离线安装与核验](#离线安装与核验) 继续。
+`-c core.autocrlf=false` 只用于新检出，保留构建器校验的原始文件字节，包括 `LICENSE`。也可下载 GitHub 的 `Source code (zip)`，解压后进入源码根目录，从 `python --version` 开始。构建器按选定源码清单生成工作包及同名 `.sha256`。仓库的 `SOURCE_MANIFEST.json` 与 `SOURCE_SHA256SUMS` 保留原始选定源码记录，详细工具链见 [历史构建记录](../BUILD.md)。构建完成后，从 [离线安装与核验](#离线安装与核验) 继续。
 
 ## 方式二：下载正式 ZIP 或 wheel
 
@@ -33,6 +33,8 @@ python -B tools/agent_test_package.py --source . `
 - `loommode-2.0.0-py3-none-any.whl` 是 Python 包，与 ZIP 内的 wheel 字节相同。已有完整 ZIP 时无需再下载。只有 wheel 时，可以验证安装及导入，受管任务仍需要完整工作包提供的工具和配置。
 
 将 ZIP 解压到新目录，把 `$candidateRoot` 指向含 `MANIFEST.json` 的解压根，并为 `$evidenceRoot` 选择一个独立的新目录。ZIP 内部分文件保留构建时的候选状态和交接措辞。本流程使用 Release 校验文件与包内 `MANIFEST.json`、`SHA256SUMS`，无需历史交接件 `HANDOFF.json`。真实任务的配置见 [受管单任务指南](MANAGED_TASK.md)。
+
+包内 `MANIFEST.json` 的 `release=false` 表示构建时生成的是待发布的冻结产物，GitHub 发布状态以 Release 页面为准。`runtime_acceptance=false` 表示该构建清单未记录真实项目运行验收，安装和只读预检可以照常进行。保留这些字段原值，才能继续校验原始 ZIP 和清单。
 
 ## 离线安装与核验
 
@@ -56,11 +58,7 @@ $testPython = Join-Path $evidenceRoot 'venv\Scripts\python.exe'
 
 ## 交给 Codex 协助安装
 
-把源码目录，或下载的 ZIP／wheel 和 `SHA256SUMS.txt` 交给 Codex，复制以下提示词。两个入口均可使用。
-
-```text
-请协助我在 Windows 上安装 LoomMode 2.0.0。先读官方 README、快速开始和支持说明（https://github.com/zluer7/LoomMode）。根据我提供的源码目录或 Release 资产选用对应路径。检查 Python、Git 和所需构建依赖。下载资产先核对 SHA-256，再在新建的独立目录解压、创建 venv 并离线安装。验证包的导入路径和版本。有完整工作包时再检查其完整性和命令帮助。报告实际结果和剩余配置。需要授权、登录、凭据、安装系统依赖或变更权限时，先说明需要我完成的步骤。真实项目或模型调用等我另行授权。
-```
+把源码目录，或下载的 ZIP／wheel 和 `SHA256SUMS.txt` 交给 Codex，复制 [INSTALL_WITH_CODEX.txt](../INSTALL_WITH_CODEX.txt) 中的提示词。两种路线都可以用它来完成安装准备。
 
 ## 配置并启动受管单任务
 

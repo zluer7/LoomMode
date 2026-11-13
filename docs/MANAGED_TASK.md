@@ -5,7 +5,9 @@
 ## 准备项目与配置
 
 1. 在普通 Windows 用户会话中准备独立的 Workspace、Records、Runtime、原始输入及新的生成输入目录。用一项有明确可改文件和固定测试的小任务开始。取得项目 Owner 的明确授权，约定实际项目、任务、资源、时限及停止点。完整输入说明见 [原指南第 3 节](Agent_Test_Install.md#3-prepare-fresh-isolated-work-only-after-later-authorization)。
-2. 参照工作包的 `config/agent_test_request.example.json` 和 `config/agent_test_resource.example.json` 填写实际请求。示例含无效占位值。使用合法、兼容且已登录的 Codex app-server。按 [原指南第 4 节](Agent_Test_Install.md#4-generate-inert-pins-review-then-explicitly-activate) 生成 inert 配置、检查来源并运行只读预检。核实实际授权后，在另一新目录生成 active 配置。
+2. 参照工作包的 `config/agent_test_request.example.json` 和 `config/agent_test_resource.example.json` 填写实际请求。示例含无效占位值。按 [原指南第 4 节](Agent_Test_Install.md#4-generate-inert-pins-review-then-explicitly-activate) 生成 inert 配置、检查来源并运行只读预检。真实运行需要合法、兼容且已登录的 Codex app-server。核实实际授权后，在另一新目录生成 active 配置。
+
+安装阶段可在实际输入齐备时止于 `BOOTSTRAP_STATIC_READ_ONLY`。该预检校验配置和文件摘要，无需登录或启动 app-server。Codex 认证、协议兼容性与任务运行须在获授权的环境另行验证。
 
 ## 启动、逐次推进与关闭
 

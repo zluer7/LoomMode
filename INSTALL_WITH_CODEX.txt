@@ -1,0 +1,35 @@
+LoomMode 2.0.0 — 使用 Codex 协助安装
+====================================
+
+首发支持 Windows、Codex、受管单任务和人工逐次推进。Codex 可以协助检查环境、安装和预检。你仍需提供所需工具，并确认真实运行涉及的授权和配置。
+
+【第 1 步：获取源码或完整工作包】
+
+A. 从 GitHub 克隆或下载源码。Windows 上克隆时按快速开始保留原始换行。
+   https://github.com/zluer7/LoomMode
+
+B. 从 v2.0.0 的 Release Assets 下载 LoomMode-2.0.0-Agent-Test.zip 和 SHA256SUMS.txt。
+   https://github.com/zluer7/LoomMode/releases
+   Agent-Test 是沿用的工作包格式名。GitHub 自动生成的 Source code (zip) 用于源码路线。
+
+独立 wheel 只安装 Python 包。要准备受管任务，请使用带工具、配置和角色的完整工作包，或从源码构建它。
+
+【第 2 步：把下面的提示词复制给 Codex】
+
+用 Codex 打开包含源码或下载文件的目录，发送以下内容。
+
+-------------------- 复制以下提示词 --------------------
+
+请协助我在 Windows 上安装 LoomMode 2.0.0，并完成最小离线检查。
+
+1. 识别我提供的是 GitHub 源码、Release 完整 ZIP，还是仅有 wheel。告诉我缺少哪些文件。先读官方 README.md、docs/QUICK_START.md、docs/MANAGED_TASK.md 和 docs/SUPPORT.md。如果手头只有 ZIP 内的历史说明，请从 https://github.com/zluer7/LoomMode 获取对应版本的现行说明。
+2. 按快速开始检查 Python、Git、构建依赖和 Codex。使用已有工具。下载的资产先核对 SHA256SUMS.txt，完整工作包还要核验包内清单。把解压、构建和 venv 放在新建的独立目录，保留已有项目和文件。
+3. 按官方步骤离线安装，检查导入路径和版本。有完整工作包时，核验工具入口。若我已提供项目和配置所需的真实输入，再生成 inert 配置并运行只读预检；缺少输入时列出缺项。
+4. 需要登录、凭据、安装系统依赖、修改权限、启动 Host、调用模型或运行真实任务时，说明需要我完成或授权的步骤。保留我的本地配置和隐私，不提交或推送 Git，也不上传本地资料。
+5. 简要报告安装目录、来源、版本、实际检查结果、遇到的问题和下一步。
+
+-------------------- 提示词结束 --------------------
+
+【第 3 步：准备首个受管任务】
+
+按 docs/MANAGED_TASK.md 准备项目、范围和固定测试。真实任务需另行授权，逐次手动推进，在提交授权节点停下。遇到问题可通过 GitHub Issues 提交可公开的复现信息。

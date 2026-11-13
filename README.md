@@ -6,8 +6,10 @@ LoomMode 是由 Owner 主导委托、多 AI 角色协作的本地软件研发工
 
 ## 开始使用
 
+**想让 Codex 协助安装？** 打开 [INSTALL_WITH_CODEX.txt](INSTALL_WITH_CODEX.txt)，复制提示词，并把源码目录或下载的工作包交给 Codex。
+
 - **从 GitHub 源码安装**适合开发者与贡献者。克隆本仓库，离线构建完整工作包，再在独立环境安装验证。 [源码安装步骤](docs/QUICK_START.md#方式一从-github-源码安装)
-- **从 Release 下载工作包**适合首次体验。发布后，从 [GitHub Releases](https://github.com/zluer7/LoomMode/releases) 下载完整 ZIP 和 `SHA256SUMS.txt`，或按需下载独立 wheel。ZIP 附带运行所需的工具、配置、角色和同一 wheel。单独的 wheel 适用于安装 Python 包。可将源码目录或下载文件交给 Codex，使用 [可复制的安装提示词](docs/QUICK_START.md#交给-codex-协助安装)。
+- **从 Release 下载工作包**适合首次体验。发布后，从 [GitHub Releases](https://github.com/zluer7/LoomMode/releases) 下载 `LoomMode-2.0.0-Agent-Test.zip` 和 `SHA256SUMS.txt`。ZIP 含有工具、配置、角色和 wheel。独立 wheel 只安装 Python 包，受管任务需要完整工作包。 [下载与校验步骤](docs/QUICK_START.md#方式二下载正式-zip-或-wheel)
 
 在普通 Windows 用户环境使用 Python 3.11 或更高版本。源码获取及受管任务还需 Git。真实任务另需兼容的 Codex app-server、有效登录和项目授权。
 
